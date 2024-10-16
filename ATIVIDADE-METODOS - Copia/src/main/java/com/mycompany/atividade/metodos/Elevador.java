@@ -2,10 +2,10 @@ package com.mycompany.atividade.metodos;
 
 
 public class Elevador {
-    int andar_atual;
-    int max_pessoas;
-    int pessoas_atuais;
-    int total_andares;
+    int andar_atual = 0;
+    int max_pessoas = 5;
+    int pessoas_atuais = 0;
+    int total_andares = 10;
     
     
     public void entra(){
@@ -18,9 +18,9 @@ public class Elevador {
             pessoas_atuais--;
         }
     }
-    public void sobe(){
+    public void sobe(int qtd_andares){
         if (andar_atual < total_andares){
-            andar_atual++;
+            andar_atual += qtd_andares;
         }
             
     }
